@@ -6,8 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       #  your build commands
-      # - run: |
-      #    npm run build
+      - run: npm run build
       - uses: amondnet/vercel-action@v25.1.0 #deploy
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
